@@ -18,5 +18,4 @@ jobs:
       working-directory: ./atinout
       
     - name: Install dependencies
-      run: make
-      
+      run: make install
