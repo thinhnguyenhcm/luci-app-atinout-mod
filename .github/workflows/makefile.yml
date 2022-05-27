@@ -16,8 +16,6 @@ jobs:
     
     - name: Go to atinout
       run: cd atinout
-    - name: configure
-      run: ./configure
       
     - name: Install dependencies
       run: make
@@ -25,5 +23,3 @@ jobs:
     - name: Run check
       run: make check
       
-    - name: Run distcheck
-      run: make distcheck
