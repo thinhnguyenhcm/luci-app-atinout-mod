@@ -14,12 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: Go to atinout
-      run: cd atinout
+    - name: Setup atinout
+      working-directory: ./atinout
       
     - name: Install dependencies
       run: make
-      
-    - name: Run check
-      run: make check
       
